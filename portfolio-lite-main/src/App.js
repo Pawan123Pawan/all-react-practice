@@ -4,8 +4,8 @@ import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Section from "./Components/Section";
 // import "./style.css"
-import sectionData from "./data/sectionData";
-
+// import sectionData from "./data/sectionData";
+import studentData from "./data/students";
 
 
 
@@ -19,10 +19,11 @@ const App = () => {
             <About />
 
           {
-             sectionData.map(value => (
+             studentData.map(value => (
                   <Section 
-                     x={value.title}
-                     y={value.des}
+                     name={value.name}
+                     stream={value.stream}
+                     url ={value.image}
                   />
              ))
 

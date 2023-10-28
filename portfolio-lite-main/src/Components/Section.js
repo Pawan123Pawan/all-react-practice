@@ -1,11 +1,12 @@
 import React from "react"; 
 
-const Section = ({x, y}) => {
+const Section = ({name, stream, url}) => {
     return(
         <div>
             <hr/>
-            <h1>{x}</h1>
-            <p>{y}</p>
+            <h1>{name}</h1>
+            <h3>{stream}</h3>
+            <img  className="imageStudent" src={url} alt="student image"></img>
         </div>
     )
 }
