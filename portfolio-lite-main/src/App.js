@@ -6,6 +6,7 @@ import Section from "./Components/Section";
 // import "./style.css"
 // import sectionData from "./data/sectionData";
 import studentData from "./data/students";
+import image from "./images/vite.svg";
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
 
      return(
         <div>
+            <img src={image} alt="dsd" />
             <Navbar />
             <About />
 
@@ -24,6 +26,7 @@ const App = () => {
                      name={value.name}
                      stream={value.stream}
                      url ={value.image}
+                     message ="skdsld-hello"
                   />
              ))
 
